@@ -1,38 +1,67 @@
-.App {
+/* src/App.css */
+
+/* Styling for CompanyNavbar */
+.d-flex {
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Styling for Pricing Header */
+.pricing-header {
+  padding: 3rem 0;
+}
+
+/* Styling for Price Card Container */
+.card-deck {
+  margin-top: 3rem;
+}
+
+/* Styling for Individual Price Card */
+.card {
+  border: none;
+}
+
+/* Styling for Price Card Header */
+.card-header {
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+
+/* Styling for Price Card body */
+.card-body {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Styling for Price Card Title */
+.pricing-card-title {
+  font-size: 2.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Styling for Price Card Features */
+.list-unstyled {
+  text-align: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Styling for Price Card Button */
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-outline-primary {
+  color: #007bff;
+  border-color: #007bff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .d-flex {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
